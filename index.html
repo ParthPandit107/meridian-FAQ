@@ -4,620 +4,196 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meridian Health Clinic — FAQ</title>
-  <meta name="description" content="Frequently Asked Questions for Meridian Health Clinic. Information on hours, locations, insurance, services, appointments, and patient policies." />
+  <meta name="description" content="Official Frequently Asked Questions for Meridian Health Clinic. Locations, hours, insurance, services, appointments, and policies." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Schema.org JSON-LD Structured Data for AI Web Scrapers & Search Engines -->
+  <style>
+    :root { --primary: #0f766e; --bg: #f8fafc; --card-bg: #ffffff; --text: #0f172a; --muted: #475569; --border: #e2e8f0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 40px 20px; }
+    .container { max-width: 800px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid var(--border); }
+    h1 { font-size: 2.25rem; color: var(--primary); margin-bottom: 8px; }
+    .subtitle { color: var(--muted); font-size: 1.05rem; }
+    section { margin-bottom: 36px; }
+    h2 { font-size: 1.4rem; color: #1e293b; margin-bottom: 16px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+    .location-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .location-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+    .location-box h3 { color: var(--primary); font-size: 1.1rem; margin-bottom: 4px; }
+    .location-box p { font-size: 0.95rem; color: var(--muted); }
+    .faq-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-bottom: 12px; }
+    .faq-card h3 { font-size: 1.1rem; color: var(--text); margin-bottom: 8px; }
+    .faq-card p { color: var(--muted); font-size: 1rem; }
+    footer { text-align: center; margin-top: 50px; color: var(--muted); font-size: 0.875rem; }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What are your clinic hours?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Meridian Health Clinic is open Monday–Saturday, 8am–7pm. Our Downtown location is also open Sundays, 9am–2pm."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where are your locations?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We have three locations: Downtown (123 Main St), Westside (45 Oak Ave), and Eastgate (890 Pine Rd)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept my insurance?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We accept most major PPO insurance plans. We currently do not accept HMO plans. Bring your insurance card to your first visit so we can verify coverage."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What should I bring to my first appointment?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Please bring a photo ID, your insurance card, and a list of any current medications. New patients should also arrive 15 minutes early to complete an intake form."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you offer dental services?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, our Westside and Downtown locations offer general and cosmetic dentistry, including cleanings, fillings, and checkups."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you offer mental health counseling?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, our Eastgate location has licensed counselors offering individual therapy sessions. Appointments can be booked directly or via referral."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I get lab work done?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, all three locations have on-site diagnostic labs for bloodwork and basic imaging."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I book an appointment?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can book directly through this chat — I just need a few details from you."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What if I need to cancel or reschedule?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Please give us at least 24 hours' notice by calling your clinic location directly."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you treat children?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, our Downtown and Westside locations accept patients of all ages, including pediatric care."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does a visit cost without insurance?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Self-pay visits start at $120 for a standard consultation. Costs vary by service — our front desk can give you an exact quote for your specific visit type."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is parking available?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, all three locations have free on-site patient parking."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you offer telehealth / video appointments?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, for follow-up visits and mental health counseling sessions, we offer video appointments. First-time visits are generally in-person."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What age groups do you treat?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We treat patients of all ages at our Downtown and Westside locations. Eastgate primarily serves adult patients for counseling and diagnostics."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How early should I arrive for my appointment?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "New patients should arrive 15 minutes early to complete intake paperwork. Returning patients can arrive right at their appointment time."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I get a prescription refill through this chat?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "I can't process prescription refills directly, but I can help you book a follow-up appointment or connect you with the right team for a refill request."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you have weekend appointments?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our Downtown location is open Sundays 9am–2pm. Westside and Eastgate are Monday–Saturday only."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What's the difference between your locations?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Downtown offers general medicine, dental, and diagnostics. Westside focuses on general and dental care. Eastgate specializes in mental health counseling and diagnostics."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need a referral to see a specialist?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For most services, no referral is needed — you can book directly. Some specialist services may require a referral from your primary provider; I can check this for you if you tell me what you're looking to book."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is my information kept private?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, all patient information is handled confidentially in line with standard healthcare privacy practices."
-        }
-      }
+      { "@type": "Question", "name": "What are your clinic hours?", "acceptedAnswer": { "@type": "Answer", "text": "Meridian Health Clinic is open Monday–Saturday, 8am–7pm. Our Downtown location is also open Sundays, 9am–2pm." } },
+      { "@type": "Question", "name": "Where are your locations?", "acceptedAnswer": { "@type": "Answer", "text": "We have three locations: Downtown (123 Main St), Westside (45 Oak Ave), and Eastgate (890 Pine Rd)." } },
+      { "@type": "Question", "name": "Do you accept my insurance?", "acceptedAnswer": { "@type": "Answer", "text": "We accept most major PPO insurance plans. We currently do not accept HMO plans. Bring your insurance card to your first visit so we can verify coverage." } },
+      { "@type": "Question", "name": "What should I bring to my first appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Please bring a photo ID, your insurance card, and a list of any current medications. New patients should also arrive 15 minutes early to complete an intake form." } },
+      { "@type": "Question", "name": "Do you offer dental services?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, our Westside and Downtown locations offer general and cosmetic dentistry, including cleanings, fillings, and checkups." } },
+      { "@type": "Question", "name": "Do you offer mental health counseling?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, our Eastgate location has licensed counselors offering individual therapy sessions. Appointments can be booked directly or via referral." } },
+      { "@type": "Question", "name": "Can I get lab work done?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, all three locations have on-site diagnostic labs for bloodwork and basic imaging." } },
+      { "@type": "Question", "name": "How do I book an appointment?", "acceptedAnswer": { "@type": "Answer", "text": "You can book directly through this chat — I just need a few details from you." } },
+      { "@type": "Question", "name": "What if I need to cancel or reschedule?", "acceptedAnswer": { "@type": "Answer", "text": "Please give us at least 24 hours' notice by calling your clinic location directly." } },
+      { "@type": "Question", "name": "Do you treat children?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, our Downtown and Westside locations accept patients of all ages, including pediatric care." } },
+      { "@type": "Question", "name": "How much does a visit cost without insurance?", "acceptedAnswer": { "@type": "Answer", "text": "Self-pay visits start at $120 for a standard consultation. Costs vary by service — our front desk can give you an exact quote for your specific visit type." } },
+      { "@type": "Question", "name": "Is parking available?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, all three locations have free on-site patient parking." } },
+      { "@type": "Question", "name": "Do you offer telehealth / video appointments?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, for follow-up visits and mental health counseling sessions, we offer video appointments. First-time visits are generally in-person." } },
+      { "@type": "Question", "name": "What age groups do you treat?", "acceptedAnswer": { "@type": "Answer", "text": "We treat patients of all ages at our Downtown and Westside locations. Eastgate primarily serves adult patients for counseling and diagnostics." } },
+      { "@type": "Question", "name": "How early should I arrive for my appointment?", "acceptedAnswer": { "@type": "Answer", "text": "New patients should arrive 15 minutes early to complete intake paperwork. Returning patients can arrive right at their appointment time." } },
+      { "@type": "Question", "name": "Can I get a prescription refill through this chat?", "acceptedAnswer": { "@type": "Answer", "text": "I can't process prescription refills directly, but I can help you book a follow-up appointment or connect you with the right team for a refill request." } },
+      { "@type": "Question", "name": "Do you have weekend appointments?", "acceptedAnswer": { "@type": "Answer", "text": "Our Downtown location is open Sundays 9am–2pm. Westside and Eastgate are Monday–Saturday only." } },
+      { "@type": "Question", "name": "What's the difference between your locations?", "acceptedAnswer": { "@type": "Answer", "text": "Downtown offers general medicine, dental, and diagnostics. Westside focuses on general and dental care. Eastgate specializes in mental health counseling and diagnostics." } },
+      { "@type": "Question", "name": "Do I need a referral to see a specialist?", "acceptedAnswer": { "@type": "Answer", "text": "For most services, no referral is needed — you can book directly. Some specialist services may require a referral from your primary provider; I can check this for you if you tell me what you're looking to book." } },
+      { "@type": "Question", "name": "Is my information kept private?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, all patient information is handled confidentially in line with standard healthcare privacy practices." } }
     ]
   }
   </script>
 </head>
 <body>
-  <div class="background-decor"></div>
-  
-  <header class="site-header">
-    <div class="container">
-      <div class="brand-badge">
-        <span class="pulse-dot"></span> Official Knowledge Base
-      </div>
+  <div class="container">
+    <header>
       <h1>Meridian Health Clinic — FAQ</h1>
-      <p class="subtitle">Complete patient reference guide & knowledge base source for AI Agent training.</p>
-      
-      <div class="search-box">
-        <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-        <input type="text" id="searchInput" placeholder="Search questions, locations, hours, insurance..." />
-        <button id="clearSearch" class="clear-btn" aria-label="Clear search">&times;</button>
-      </div>
+      <p class="subtitle">Official Patient Reference & Knowledge Base</p>
+    </header>
 
-      <div class="category-pills">
-        <button class="pill active" data-category="all">All Questions (20)</button>
-        <button class="pill" data-category="hours">Hours & Schedule</button>
-        <button class="pill" data-category="locations">Locations & Services</button>
-        <button class="pill" data-category="appointments">Appointments & Telehealth</button>
-        <button class="pill" data-category="billing">Insurance & Pricing</button>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-
-    <!-- Quick Location Overview Cards -->
-    <section class="locations-overview">
-      <h2 class="section-heading">Clinic Locations Quick Guide</h2>
-      <div class="grid-3">
-        <div class="card location-card">
-          <div class="card-icon">📍</div>
-          <h3>Downtown</h3>
-          <p class="address">123 Main St</p>
-          <span class="tag blue">General Medicine</span>
-          <span class="tag green">Dental Care</span>
-          <span class="tag purple">Diagnostics</span>
-          <div class="hours-badge">Mon–Sat 8am–7pm | Sun 9am–2pm</div>
+    <section>
+      <h2>Locations Summary</h2>
+      <div class="location-grid">
+        <div class="location-box">
+          <h3>Downtown Location</h3>
+          <p>123 Main St</p>
+          <p>General Medicine, Dental Care, Diagnostics</p>
+          <p>Mon–Sat 8am–7pm | Sun 9am–2pm</p>
         </div>
-
-        <div class="card location-card">
-          <div class="card-icon">📍</div>
-          <h3>Westside</h3>
-          <p class="address">45 Oak Ave</p>
-          <span class="tag blue">General Medicine</span>
-          <span class="tag green">Dental Care</span>
-          <span class="tag yellow">Pediatric Care</span>
-          <div class="hours-badge">Mon–Sat 8am–7pm</div>
+        <div class="location-box">
+          <h3>Westside Location</h3>
+          <p>45 Oak Ave</p>
+          <p>General Medicine, Dental Care, Pediatric Care</p>
+          <p>Mon–Sat 8am–7pm</p>
         </div>
-
-        <div class="card location-card">
-          <div class="card-icon">📍</div>
-          <h3>Eastgate</h3>
-          <p class="address">890 Pine Rd</p>
-          <span class="tag pink">Mental Health</span>
-          <span class="tag purple">Diagnostics</span>
-          <span class="tag gray">Adult Focus</span>
-          <div class="hours-badge">Mon–Sat 8am–7pm</div>
+        <div class="location-box">
+          <h3>Eastgate Location</h3>
+          <p>890 Pine Rd</p>
+          <p>Mental Health Counseling, Diagnostics (Adults)</p>
+          <p>Mon–Sat 8am–7pm</p>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Accordion List -->
-    <section class="faq-section">
-      <div class="section-header-flex">
-        <h2 class="section-heading">Frequently Asked Questions</h2>
-        <button id="toggleAllBtn" class="action-btn">Expand All</button>
-      </div>
+    <section>
+      <h2>Frequently Asked Questions</h2>
 
-      <div class="faq-list" id="faqList">
+      <article class="faq-card">
+        <h3>Q: What are your clinic hours?</h3>
+        <p>A: Meridian Health Clinic is open Monday–Saturday, 8am–7pm. Our Downtown location is also open Sundays, 9am–2pm.</p>
+      </article>
 
-        <!-- Category: Hours -->
-        <article class="faq-item" data-category="hours">
-          <details open>
-            <summary>
-              <span class="q-number">01</span>
-              <span class="q-title">What are your clinic hours?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Meridian Health Clinic is open Monday–Saturday, 8am–7pm. Our Downtown location is also open Sundays, 9am–2pm.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: Where are your locations?</h3>
+        <p>A: We have three locations: Downtown (123 Main St), Westside (45 Oak Ave), and Eastgate (890 Pine Rd).</p>
+      </article>
 
-        <article class="faq-item" data-category="hours">
-          <details>
-            <summary>
-              <span class="q-number">02</span>
-              <span class="q-title">Do you have weekend appointments?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Our Downtown location is open Sundays 9am–2pm. Westside and Eastgate are Monday–Saturday only.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: Do you accept my insurance?</h3>
+        <p>A: We accept most major PPO insurance plans. We currently do not accept HMO plans. Bring your insurance card to your first visit so we can verify coverage.</p>
+      </article>
 
-        <article class="faq-item" data-category="hours">
-          <details>
-            <summary>
-              <span class="q-number">03</span>
-              <span class="q-title">How early should I arrive for my appointment?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>New patients should arrive 15 minutes early to complete intake paperwork. Returning patients can arrive right at their appointment time.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: What should I bring to my first appointment?</h3>
+        <p>A: Please bring a photo ID, your insurance card, and a list of any current medications. New patients should also arrive 15 minutes early to complete an intake form.</p>
+      </article>
 
-        <!-- Category: Locations & Services -->
-        <article class="faq-item" data-category="locations">
-          <details>
-            <summary>
-              <span class="q-number">04</span>
-              <span class="q-title">Where are your locations?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>We have three locations: Downtown (123 Main St), Westside (45 Oak Ave), and Eastgate (890 Pine Rd).</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: Do you offer dental services?</h3>
+        <p>A: Yes, our Westside and Downtown locations offer general and cosmetic dentistry, including cleanings, fillings, and checkups.</p>
+      </article>
 
-        <article class="faq-item" data-category="locations">
-          <details>
-            <summary>
-              <span class="q-number">05</span>
-              <span class="q-title">What's the difference between your locations?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Downtown offers general medicine, dental, and diagnostics. Westside focuses on general and dental care. Eastgate specializes in mental health counseling and diagnostics.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: Do you offer mental health counseling?</h3>
+        <p>A: Yes, our Eastgate location has licensed counselors offering individual therapy sessions. Appointments can be booked directly or via referral.</p>
+      </article>
 
-        <article class="faq-item" data-category="locations">
-          <details>
-            <summary>
-              <span class="q-number">06</span>
-              <span class="q-title">Do you offer dental services?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Yes, our Westside and Downtown locations offer general and cosmetic dentistry, including cleanings, fillings, and checkups.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: Can I get lab work done?</h3>
+        <p>A: Yes, all three locations have on-site diagnostic labs for bloodwork and basic imaging.</p>
+      </article>
 
-        <article class="faq-item" data-category="locations">
-          <details>
-            <summary>
-              <span class="q-number">07</span>
-              <span class="q-title">Do you offer mental health counseling?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Yes, our Eastgate location has licensed counselors offering individual therapy sessions. Appointments can be booked directly or via referral.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: How do I book an appointment?</h3>
+        <p>A: You can book directly through this chat — I just need a few details from you.</p>
+      </article>
 
-        <article class="faq-item" data-category="locations">
-          <details>
-            <summary>
-              <span class="q-number">08</span>
-              <span class="q-title">Can I get lab work done?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Yes, all three locations have on-site diagnostic labs for bloodwork and basic imaging.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: What if I need to cancel or reschedule?</h3>
+        <p>A: Please give us at least 24 hours' notice by calling your clinic location directly.</p>
+      </article>
 
-        <article class="faq-item" data-category="locations">
-          <details>
-            <summary>
-              <span class="q-number">09</span>
-              <span class="q-title">Do you treat children?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Yes, our Downtown and Westside locations accept patients of all ages, including pediatric care.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: Do you treat children?</h3>
+        <p>A: Yes, our Downtown and Westside locations accept patients of all ages, including pediatric care.</p>
+      </article>
 
-        <article class="faq-item" data-category="locations">
-          <details>
-            <summary>
-              <span class="q-number">10</span>
-              <span class="q-title">What age groups do you treat?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>We treat patients of all ages at our Downtown and Westside locations. Eastgate primarily serves adult patients for counseling and diagnostics.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: How much does a visit cost without insurance?</h3>
+        <p>A: Self-pay visits start at $120 for a standard consultation. Costs vary by service — our front desk can give you an exact quote for your specific visit type.</p>
+      </article>
 
-        <article class="faq-item" data-category="locations">
-          <details>
-            <summary>
-              <span class="q-number">11</span>
-              <span class="q-title">Is parking available?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Yes, all three locations have free on-site patient parking.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: Is parking available?</h3>
+        <p>A: Yes, all three locations have free on-site patient parking.</p>
+      </article>
 
-        <!-- Category: Appointments -->
-        <article class="faq-item" data-category="appointments">
-          <details>
-            <summary>
-              <span class="q-number">12</span>
-              <span class="q-title">How do I book an appointment?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>You can book directly through this chat — I just need a few details from you.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: Do you offer telehealth / video appointments?</h3>
+        <p>A: Yes, for follow-up visits and mental health counseling sessions, we offer video appointments. First-time visits are generally in-person.</p>
+      </article>
 
-        <article class="faq-item" data-category="appointments">
-          <details>
-            <summary>
-              <span class="q-number">13</span>
-              <span class="q-title">What if I need to cancel or reschedule?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Please give us at least 24 hours' notice by calling your clinic location directly.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: What age groups do you treat?</h3>
+        <p>A: We treat patients of all ages at our Downtown and Westside locations. Eastgate primarily serves adult patients for counseling and diagnostics.</p>
+      </article>
 
-        <article class="faq-item" data-category="appointments">
-          <details>
-            <summary>
-              <span class="q-number">14</span>
-              <span class="q-title">What should I bring to my first appointment?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Please bring a photo ID, your insurance card, and a list of any current medications. New patients should also arrive 15 minutes early to complete an intake form.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: How early should I arrive for my appointment?</h3>
+        <p>A: New patients should arrive 15 minutes early to complete intake paperwork. Returning patients can arrive right at their appointment time.</p>
+      </article>
 
-        <article class="faq-item" data-category="appointments">
-          <details>
-            <summary>
-              <span class="q-number">15</span>
-              <span class="q-title">Do you offer telehealth / video appointments?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Yes, for follow-up visits and mental health counseling sessions, we offer video appointments. First-time visits are generally in-person.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: Can I get a prescription refill through this chat?</h3>
+        <p>A: I can't process prescription refills directly, but I can help you book a follow-up appointment or connect you with the right team for a refill request.</p>
+      </article>
 
-        <article class="faq-item" data-category="appointments">
-          <details>
-            <summary>
-              <span class="q-number">16</span>
-              <span class="q-title">Can I get a prescription refill through this chat?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>I can't process prescription refills directly, but I can help you book a follow-up appointment or connect you with the right team for a refill request.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: Do you have weekend appointments?</h3>
+        <p>A: Our Downtown location is open Sundays 9am–2pm. Westside and Eastgate are Monday–Saturday only.</p>
+      </article>
 
-        <article class="faq-item" data-category="appointments">
-          <details>
-            <summary>
-              <span class="q-number">17</span>
-              <span class="q-title">Do I need a referral to see a specialist?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>For most services, no referral is needed — you can book directly. Some specialist services may require a referral from your primary provider; I can check this for you if you tell me what you're looking to book.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: What's the difference between your locations?</h3>
+        <p>A: Downtown offers general medicine, dental, and diagnostics. Westside focuses on general and dental care. Eastgate specializes in mental health counseling and diagnostics.</p>
+      </article>
 
-        <!-- Category: Billing & Privacy -->
-        <article class="faq-item" data-category="billing">
-          <details>
-            <summary>
-              <span class="q-number">18</span>
-              <span class="q-title">Do you accept my insurance?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>We accept most major PPO insurance plans. We currently do not accept HMO plans. Bring your insurance card to your first visit so we can verify coverage.</p>
-            </div>
-          </details>
-        </article>
+      <article class="faq-card">
+        <h3>Q: Do I need a referral to see a specialist?</h3>
+        <p>A: For most services, no referral is needed — you can book directly. Some specialist services may require a referral from your primary provider; I can check this for you if you tell me what you're looking to book.</p>
+      </article>
 
-        <article class="faq-item" data-category="billing">
-          <details>
-            <summary>
-              <span class="q-number">19</span>
-              <span class="q-title">How much does a visit cost without insurance?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Self-pay visits start at $120 for a standard consultation. Costs vary by service — our front desk can give you an exact quote for your specific visit type.</p>
-            </div>
-          </details>
-        </article>
-
-        <article class="faq-item" data-category="billing">
-          <details>
-            <summary>
-              <span class="q-number">20</span>
-              <span class="q-title">Is my information kept private?</span>
-              <span class="chevron"></span>
-            </summary>
-            <div class="faq-answer">
-              <p>Yes, all patient information is handled confidentially in line with standard healthcare privacy practices.</p>
-            </div>
-          </details>
-        </article>
-
-      </div>
-      
-      <div id="noResults" class="no-results hidden">
-        <p>No matching questions found. Try adjusting your search query.</p>
-      </div>
+      <article class="faq-card">
+        <h3>Q: Is my information kept private?</h3>
+        <p>A: Yes, all patient information is handled confidentially in line with standard healthcare privacy practices.</p>
+      </article>
     </section>
 
-    <!-- Raw Plain Text Knowledge Base Box for Copying -->
-    <section class="raw-kb-section">
-      <div class="raw-kb-card">
-        <div class="raw-header">
-          <div>
-            <h3>📋 Raw Plain-Text KB Copy Block</h3>
-            <p>Ready to copy-paste directly into Notion, Google Docs, Carrd, or Tars Knowledge Base input.</p>
-          </div>
-          <button id="copyKbBtn" class="copy-btn">
-            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
-            Copy Text
-          </button>
-        </div>
-        <textarea id="rawKbText" readonly rows="12">
-Meridian Health Clinic — FAQ & Knowledge Base
-
-Q: What are your clinic hours?
-A: Meridian Health Clinic is open Monday–Saturday, 8am–7pm. Our Downtown location is also open Sundays, 9am–2pm.
-
-Q: Where are your locations?
-A: We have three locations: Downtown (123 Main St), Westside (45 Oak Ave), and Eastgate (890 Pine Rd).
-
-Q: Do you accept my insurance?
-A: We accept most major PPO insurance plans. We currently do not accept HMO plans. Bring your insurance card to your first visit so we can verify coverage.
-
-Q: What should I bring to my first appointment?
-A: Please bring a photo ID, your insurance card, and a list of any current medications. New patients should also arrive 15 minutes early to complete an intake form.
-
-Q: Do you offer dental services?
-A: Yes, our Westside and Downtown locations offer general and cosmetic dentistry, including cleanings, fillings, and checkups.
-
-Q: Do you offer mental health counseling?
-A: Yes, our Eastgate location has licensed counselors offering individual therapy sessions. Appointments can be booked directly or via referral.
-
-Q: Can I get lab work done?
-A: Yes, all three locations have on-site diagnostic labs for bloodwork and basic imaging.
-
-Q: How do I book an appointment?
-A: You can book directly through this chat — I just need a few details from you.
-
-Q: What if I need to cancel or reschedule?
-A: Please give us at least 24 hours' notice by calling your clinic location directly.
-
-Q: Do you treat children?
-A: Yes, our Downtown and Westside locations accept patients of all ages, including pediatric care.
-
-Q: How much does a visit cost without insurance?
-A: Self-pay visits start at $120 for a standard consultation. Costs vary by service — our front desk can give you an exact quote for your specific visit type.
-
-Q: Is parking available?
-A: Yes, all three locations have free on-site patient parking.
-
-Q: Do you offer telehealth / video appointments?
-A: Yes, for follow-up visits and mental health counseling sessions, we offer video appointments. First-time visits are generally in-person.
-
-Q: What age groups do you treat?
-A: We treat patients of all ages at our Downtown and Westside locations. Eastgate primarily serves adult patients for counseling and diagnostics.
-
-Q: How early should I arrive for my appointment?
-A: New patients should arrive 15 minutes early to complete intake paperwork. Returning patients can arrive right at their appointment time.
-
-Q: Can I get a prescription refill through this chat?
-A: I can't process prescription refills directly, but I can help you book a follow-up appointment or connect you with the right team for a refill request.
-
-Q: Do you have weekend appointments?
-A: Our Downtown location is open Sundays 9am–2pm. Westside and Eastgate are Monday–Saturday only.
-
-Q: What's the difference between your locations?
-A: Downtown offers general medicine, dental, and diagnostics. Westside focuses on general and dental care. Eastgate specializes in mental health counseling and diagnostics.
-
-Q: Do I need a referral to see a specialist?
-A: For most services, no referral is needed — you can book directly. Some specialist services may require a referral from your primary provider; I can check this for you if you tell me what you're looking to book.
-
-Q: Is my information kept private?
-A: Yes, all patient information is handled confidentially in line with standard healthcare privacy practices.
-        </textarea>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; Meridian Health Clinic. Confidential Patient Knowledge Base Source for AI Chatbot Training.</p>
-    </div>
-  </footer>
-
-  <script src="app.js"></script>
+    <footer>
+      <p>&copy; Meridian Health Clinic — All Information Confidential & Reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
